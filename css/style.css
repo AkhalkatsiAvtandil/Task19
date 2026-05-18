@@ -43,8 +43,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid;
-  row-gap: 15px;
 }
 .cards-container img {
   width: 475px;
