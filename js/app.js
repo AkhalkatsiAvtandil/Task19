@@ -26,6 +26,7 @@ results.forEach((results) => {
   html += `<div class="cards-container">
         <img src="${results.webImage.url}" alt="${results.title}" />
         <h2>${results.title}</h2>
+        <div class="render"></div>
         <div class="carddiv">
         <button class="details">see more details</button>
         <button class="remove">remove card</button>
@@ -36,3 +37,18 @@ div.innerHTML = html;
 imageslist.appendChild(div);
 
 // task5
+
+const detaiLs = document.querySelector("details");
+const remoVe = document.querySelector("remove");
+
+function rendermoredetails() {
+  const div = document.createElement("div");
+  let html = "";
+  results.longTitle.forEach((results) => {
+    html += `<p>${results.longTitle}</p>
+  <p>"for more information visit here "<a href="#">"Link"</a></p>`;
+  });
+  div.innerHTML = html;
+  detaiLs.appendChild(div);
+}
+button.addEventListener("click", createContext);
