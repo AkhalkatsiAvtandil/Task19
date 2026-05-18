@@ -51,4 +51,4 @@ function rendermoredetails() {
   div.innerHTML = html;
   detaiLs.appendChild(div);
 }
-button.addEventListener("click", createContext);
+// button.addEventListener("click", createContext);
