@@ -16,3 +16,5 @@ newimg.src =
 newimg.alt = "table";
 const section = document.querySelector("section");
 section.appendChild(newimg);
+
+// task3
