@@ -17,4 +17,18 @@ newimg.alt = "table";
 const section = document.querySelector("section");
 section.appendChild(newimg);
 
-// task3
+// task3-4
+let imageslist = document.querySelector("#images-list");
+const div = document.createElement("div");
+
+let html = "";
+results.forEach((results) => {
+  html += `<div class="cards-container">
+        <img src="${results.links.web}" alt="${results.title}" />
+        <h1>${results.title}</h1>
+        <button class="details">see more details</button>
+        <button class="remove">remove card</button>
+      </div>`;
+});
+div.innerHTML = html;
+imageslist.appendChild(div);
