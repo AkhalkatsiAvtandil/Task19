@@ -9,7 +9,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -38,9 +38,30 @@ button {
 }
 
 .cards-container {
-  max-width: 300px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 3px solid;
+  row-gap: 15px;
+}
+.cards-container img {
+  width: 475px;
+  height: 300px;
+}
+.cards-container:nth-child(1) {
+  row-gap: 29px;
+}
+section div {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.carddiv {
+  width: 440px;
+  display: flex;
+  justify-content: flex-start;
 }

@@ -24,11 +24,15 @@ const div = document.createElement("div");
 let html = "";
 results.forEach((results) => {
   html += `<div class="cards-container">
-        <img src="${results.links.web}" alt="${results.title}" />
-        <h1>${results.title}</h1>
+        <img src="${results.webImage.url}" alt="${results.title}" />
+        <h2>${results.title}</h2>
+        <div class="carddiv">
         <button class="details">see more details</button>
         <button class="remove">remove card</button>
+        </div>
       </div>`;
 });
 div.innerHTML = html;
 imageslist.appendChild(div);
+
+// task5
